@@ -17,8 +17,8 @@ public class MainActivity extends AppCompatActivity {
 
     private static final String TAG = MainActivity.class.getSimpleName();
 
-    // SKU for our subscription (infinite gas)
-    private static final String SKU_INFINITE_GAS = "infinite_amount"; // "infinite_amount";
+    // SKU for our subscription (infinite_amount gas)
+    private static final String SKU_INFINITE_AMOUNT = "infinite_amount"; // "infinite_amount";
     // (arbitrary) request code for the purchase flow
     private static final int RC_REQUEST = 10001;
 
@@ -51,7 +51,7 @@ public class MainActivity extends AppCompatActivity {
              */
 
             // Do we have the infinite gas plan?
-            Purchase infiniteGasPurchase = inventory.getPurchase(SKU_INFINITE_GAS);
+            Purchase infiniteGasPurchase = inventory.getPurchase(SKU_INFINITE_AMOUNT);
             mSubscribedToInfiniteGas = (infiniteGasPurchase != null && verifyDeveloperPayload(infiniteGasPurchase));
             Log.d(TAG, "User " + (mSubscribedToInfiniteGas ? "HAS" : "DOES NOT HAVE")
                     + " infinite gas subscription.");
@@ -80,7 +80,7 @@ public class MainActivity extends AppCompatActivity {
 
             Log.d(TAG, "Purchase successful.");
 
-            if (purchase.getSku().equals(SKU_INFINITE_GAS)) {
+            if (purchase.getSku().equals(SKU_INFINITE_AMOUNT)) {
                 // bought the infinite gas subscription
                 Log.d(TAG, "Infinite gas subscription purchased.");
                 showErrorMessage("Thank you for subscribing to infinite gas!");
@@ -172,7 +172,7 @@ public class MainActivity extends AppCompatActivity {
         String payload = getString(R.string.pay_load);
 
         Log.d(TAG, "Launching purchase flow for infinite gas subscription.");
-        mHelper.launchPurchaseFlow(this, SKU_INFINITE_GAS, IabHelper.ITEM_TYPE_SUBS, RC_REQUEST,
+        mHelper.launchPurchaseFlow(this, SKU_INFINITE_AMOUNT, IabHelper.ITEM_TYPE_SUBS, RC_REQUEST,
                 mPurchaseFinishedListener, payload);
 
     }
