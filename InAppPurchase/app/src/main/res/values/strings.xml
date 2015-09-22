@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">InAppPurchase</string>
+
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="pay_load">0923{=***000_3920}[]_0</string>
+    <string name="app_publish_key">MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAphMxAv1arFvGlz8ZTBG1FGe9MMYBAZihqAHtd8505wqj2GT+U6Se79r1pYL4wKiQo60StTENRVWupxXcHkmxjQtNXI6Esr+Lr9f2MoZvoAl0LOnyVENFq6eyErvzkZVqzT+Rl2vKN5h/OMYLP7KLuESkqquY/zZbGiWMN7mbICaKc3CsUwn/mhBF2ApQW67ter8oTvBKHKNbrtkl6kiCJ/lg5gPcFvb7DUp/Nwv6DqW5oIowyF1T59ND0zkDgnfwMPa9OLjGME4CKr2sGNnLGpaQrREpxVvzTLtWJsppTgJkMsUGYhsUJZH1o7oSlHtnmgsd4P/JueEE/IqQLqo2PwIDAQAB</string>
+    <string name="btn_text_subscription">Subscription</string>
+</resources>
